@@ -75,5 +75,44 @@
             Toggle
         </button>
     </div>
+
+    <script>
+        function toggleBulb(){
+            const bulbElement = document.getElementById("img-bulb")
+
+            if(bulbElement.src.includes("off.png")){
+                bulbElement.src="on.png"
+            }
+            else
+            {
+                bulbElement.src="off.png"  
+            }
+            
+
+            bulbElement.src= state == 'on' ? "on.png" : "off.png"
+        }
+
+        function enableDark(){
+            const mainbody = document.getElementById("main-body")
+            mainbody.classList.remove("bg-light")
+            mainbody.classList.add("bg-dark")
+
+
+            const toggleButton = document.getElementById("btn-toggle"); 
+            toggleButton.classList.remove("btn-light");
+            toggleButton.classList.add("btn-dark");
+        }
+
+        function enableLight(){
+            const mainbody = document.getElementById("main-body")
+            mainbody.classList.remove("bg-dark")
+            mainbody.classList.add("bg-light")
+
+            const toggleButton = document.getElementById("btn-toggle"); 
+            toggleButton.classList.remove("btn-dark");
+            toggleButton.classList.add("btn-light");
+        }
+
+    </script>
 </body>
 </html>
