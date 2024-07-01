@@ -4,6 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .app-title{
+            text-align: center;
+        }
+        .img-bulb{
+            height: 150px;
+            display:block;
+            margin:10px auto;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+
+        }
+        .btn-toggle{
+            border-radius: 5px;
+            margin: 10px 30px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+        }
+        .bg-dark{
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .theme-select-icon{
+            height: 30px;
+            cursor: pointer;
+        }
+        .theme-selector-container{
+            position: fixed;
+            right: 5px;
+        }
+        .bg-dark{
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .bg-light{
+            background-color: #ccd9ff;
+            color: black;
+        }
+        .btn-dark{
+            background-color: #990099;
+            color: #fff;
+        }
+        .btn-light{
+            background-color: #ff751a;
+            color: #000;
+        }
+    </style>
 </head>
 <body class="bg-light" id="main-body">
     <h1 class="app-title">Bulb Toggler</h1>
